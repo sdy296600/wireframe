@@ -1,11 +1,13 @@
 @charset "utf-8";
 /*  */
-
+li {
+  display: list-item;
+}
 .header {
   width: 200px;
   height: 850px;
   /* background-color: #fff; */
-  background-color: #ace0a6;
+  background-color: #f58f19;
   border-bottom: 1px solid #424242;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +25,7 @@
 .header-inner {
   position: relative;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -33,40 +35,120 @@
   position: relative;
   width: 200px;
   height: 100px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #f58f19;
 }
-.logo img {
-  /* width: 100%; */
-  padding: 25px 0;
-}
+/* .logo img { 
+} */
 
 /* 메뉴 */
-
 .nav {
-  background-color: antiquewhite;
+  position: relative;
+  display: flex;
+  /* background-color: antiquewhite; */
+  /* top: 100px; */
 }
 
 .gnb {
+  position: relative;
   width: 100%;
-  /* height: 80px; */
 }
 .gnb > li {
   margin: 0 10px;
-  background-color: rgb(99, 99, 252);
+  /* background-color: rgb(163, 163, 253); */
+  transition: all 0.3s ease;
 }
 .gnb > li > a {
   display: block;
   width: 100%;
-  line-height: 30px;
+  line-height: 35px;
   font-size: 19px;
   font-weight: bold;
-}
-.gnb > li:hover > a {
   color: #fff;
 }
+.gnb > li:hover > a {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
 
+/* 서브메뉴 */
 .sub-menu {
-  /* visibility: hidden; */
+  display: none;
+  position: relative;
+  width: 100%;
+  transition: all 0.3s ease;
   /* opacity: 0; */
+  /* visibility: hidden; */
+  background-color: #fff;
+}
+
+.sub-menu.active {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.sub-menu > li > a {
+  display: block;
+  position: relative;
+  color: #333;
+  line-height: 30px;
+  font-size: 16px;
+  padding: 5px 13px;
+  transition: all 0.3s ease;
+}
+.sub-menu > li:hover > a {
+  background-color: #f58f19;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.gnb:hover .sub-menu {
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+/* 회원가입/로그인 */
+.sign-list {
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  gap: 15px;
+  padding-top: 5px;
+}
+.sign-list li {
+  position: relative;
+  text-align: center;
+  width: calc(100% / 2);
+}
+.sign-list li::after {
+  content: "";
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  width: 1px;
+  height: 11px;
+  background-color: #fff;
+}
+
+.sign-list li:first-child::after {
+  content: none;
+}
+
+.sign-list li a {
+  display: block;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
 }
