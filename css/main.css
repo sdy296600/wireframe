@@ -23,7 +23,10 @@ ul,
 li {
   list-style: none;
 }
-
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
 .wrap {
   position: relative;
   display: flex;

@@ -12,7 +12,7 @@
 }
 .slide {
   display: flex;
-  /* animation: slide 20s infinite; */
+  animation: slide 20s infinite;
 }
 @keyframes slide {
   0% {
