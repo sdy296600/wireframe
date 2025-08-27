@@ -23,18 +23,13 @@ ul,
 li {
   list-style: none;
 }
-div {
-  display: block;
-  unicode-bidi: isolate;
-}
 .wrap {
   position: relative;
   display: flex;
   background-color: #d8d8d8;
 }
 
-.container {
-  max-width: calc(100%-200px);
+/* .container {
   margin: auto;
-  /* background-color: aquamarine; */
-}
+} */
+/* background-color: aquamarine; */

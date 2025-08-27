@@ -1,26 +1,16 @@
 @charset "utf-8";
 /*  */
-li {
+.header li {
   display: list-item;
 }
 .header {
   width: 200px;
   height: 850px;
-  /* background-color: #fff; */
   background-color: #f58f19;
-  border-bottom: 1px solid #424242;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
 }
-
-/* .header-bg {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-} */
-/* transition: all 0.5s; */
 
 .header-inner {
   position: relative;
