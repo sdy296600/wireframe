@@ -8,12 +8,12 @@
 
 .content-inner {
   position: relative;
-  display: flex;
+  padding: 0 20px;
 }
 
+/* 배너================== */
 .banner {
   height: 200px;
-  padding: 30px;
   width: 100%;
   gap: 10px;
   position: relative;
@@ -53,3 +53,44 @@
   width: 80px;
   height: 80px;
 }
+
+/* ============================================= */
+
+/* 탭================== */
+
+.tab-nav {
+  width: 70%;
+  line-height: 70px;
+  display: flex;
+  text-align: center;
+}
+
+.tab-nav > li {
+  width: calc(100% / 5);
+}
+
+.tab-nav > li > a {
+  position: relative;
+  width: 100%;
+  display: block;
+  /* padding: 20px 0; */
+  line-height: 70px;
+}
+
+.tabitem {
+  position: relative;
+  width: 100%;
+  display: none;
+  background-color: azure;
+}
+
+/* .tabitem:first .tabitem img {
+  width: 100%;
+  display: block;
+} */
+.tabitem img {
+  width: 100%;
+  display: block;
+}
+
+/* ============================================= */
