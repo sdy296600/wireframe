@@ -1,9 +1,9 @@
 @charset "utf-8";
 @import url("main.css");
+
 .content {
   position: relative;
   display: block;
-  /* padding: 20px; */
 }
 
 .content-inner {
@@ -20,12 +20,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
+  /* background-color: red; */
+}
+.banner img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 50px; */
 }
 
 .banner-text {
-  margin: 10px;
+  padding: 10px;
 }
+
 .banner-text h3 {
   font-size: 23px;
   font-weight: 500;
@@ -38,14 +46,10 @@
 }
 
 .banner-btn {
-  justify-content: space-between;
-  bottom: 30px;
-  /* left: 95%; */
-  /* transform: translateX(-50%); */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
-  /* font-size: 0; */
-  border: 0;
-  background: url("../img/arrow.png") no-repeat;
-  /* background-position: -122px 0px; */
 }
